@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="headerimage">
+            <img class="img" src="../static/Images/radio_waves.jpg" alt="" height="100px" width="100%">
+
+        </div>
+        <div class="topic">
+            <img src="../static/Images/unnamed-removebg-preview.png" alt="" height="50px" width="50px">
+            <p>TTS</p>
+        </div>        
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Frequency</a>
+            <a href="#">Voices</a>
+            <a href="#">Figure out</a>
+            <a href="#">Privacy Policy</a>
+        </nav>
+    </header>
+
+    <div class="ippopesu">
+        <div class="pesuu">
+            <img src="../static/Images/download-removebg-preview.png" alt="" height="170px">
+           <h1><span class="s1">Text</span> <span class="s2">To</span> <span class="s3">Spe</span><span class="s4">ech</span></h1>
+        </div>
+        <div class="slogan">
+            <h1>Your words,Our Voice!"</h1>
+        </div>
+        <form method="POST" action="/text-to-speech" class="formform">
+            <label>Language :  </label>
+            <select name="lan" id="">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="ta">Tamil</option>
+            </select><br>
+            <textarea name="text" placeholder="Enter Text..."></textarea>
+            <br>
+            <button type="submit">Get Voice</button>
+        </form>
+    </div>
+</body>
+</html>
